@@ -1,0 +1,58 @@
+body {
+  background-color: #ffffff; /* Solid white background */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font style */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background: linear-gradient(145deg, #ffecf5, #ffd9e8); /* Pastel gradient */
+  box-shadow: 4px 4px 8px #d8a1b4, -4px -4px 8px #ffeef4;
+  border-radius: 16px;
+  padding: 20px;
+  width: 260px;
+}
+
+#display {
+  width: calc(100% - 20px);
+  height: 50px;
+  font-size: 22px;
+  text-align: right;
+  border: none;
+  border-radius: 12px;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  background: #fff6fa; /* Light pastel pink */
+  box-shadow: inset 2px 2px 5px #f4c4d9, inset -2px -2px 5px #fff9fc;
+  color: #000000; /* Black text for readability */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffd1e0, #ffe4ed); /* Soft pink gradient */
+  box-shadow: 2px 2px 5px #d8a1b4, -2px -2px 5px #ffeef4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:active {
+  background: linear-gradient(145deg, #f4c4d9, #ffd9e8);
+  box-shadow: inset 2px 2px 5px #d8a1b4, inset -2px -2px 5px #ffeef4;
+}
+
+.btn:hover {
+  background: #ffedf6; /* Slightly brighter color on hover */
+  color: #b3456e; /* Cute color change */
+}
